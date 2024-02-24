@@ -5,6 +5,7 @@ import 'package:instagram_clone_app/screens/home.dart';
 import 'package:instagram_clone_app/screens/profile.dart';
 import 'package:instagram_clone_app/screens/search.dart';
 import 'package:instagram_clone_app/shared/colors.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});
@@ -26,13 +27,6 @@ class _MobileScreenState extends State<MobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Mobile Screen",
-          style: TextStyle(color: Colors.white),
-        ),
-        backgroundColor: Colors.blueAccent,
-      ),
       bottomNavigationBar: CupertinoTabBar(
         activeColor: primaryColor,
         inactiveColor: secondaryColor,

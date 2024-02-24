@@ -14,7 +14,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+          primarySwatch: Colors.blue,
+          textTheme: const TextTheme(
+            displayLarge: TextStyle(color: Colors.white),
+            displayMedium: TextStyle(color: Colors.white),
+            bodyMedium: TextStyle(color: Colors.white),
+            titleMedium: TextStyle(color: Colors.white),
+          ),
+          iconTheme: IconThemeData(color: Colors.white)),
       home: const Responsive(
           myMobileScreen: MobileScreen(), myWebScreen: WebScreen()),
       debugShowCheckedModeBanner: false,

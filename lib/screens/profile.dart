@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone_app/shared/colors.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -11,11 +12,13 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: mobileBackgroundColor,
         appBar: AppBar(
-      title: const Text(
-        "Profile Screen",
-        style: TextStyle(color: Colors.white),
-      ),
-    ));
+          backgroundColor: mobileBackgroundColor,
+          title: const Text(
+            "Profile Screen",
+            style: TextStyle(color: Colors.white),
+          ),
+        ));
   }
 }
